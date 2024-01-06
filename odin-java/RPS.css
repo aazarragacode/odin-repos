@@ -1,0 +1,14 @@
+.contain{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+#PLAY, #COMP{
+    font-size: 32px;
+}
+#RES{
+    font-size: 32px;
+    
+}
