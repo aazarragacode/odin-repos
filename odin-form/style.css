@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container > * {
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 100vh;
+}
+
+.sidebar-container {
+  flex: 1 1 0%;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sidebar-image {
+  min-height: 100%;
+  min-width: 300px;
+}
+
+.sidebar-credit {
+  top: 97%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  top: 8%; /* Adjust the top percentage as needed */
+  left: 10%; /* Adjust the left percentage as needed */
+  max-width: 80%; /* Adjust the max-width percentage as needed */
+  max-height: 80%; /* Adjust the max-height percentage as needed */
+  transition: transform 0.5s ease; /* Added transition for smooth transformation */
+  position: absolute;
+}
+
+.form-container {
+  background-color: orange;
+  flex: 2 1 0%;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+}
