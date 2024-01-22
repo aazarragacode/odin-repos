@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container > * {
@@ -13,7 +17,8 @@
   flex-direction: row;
   flex-grow: 0;
   flex-shrink: 0;
-  min-height: 100vh;
+  min-height: 100svh;
+  min-width: 50svh;
 }
 
 .sidebar-container {
@@ -28,11 +33,11 @@ img {
 
 .sidebar-image {
   min-height: 100%;
-  min-width: 300px;
+  min-width: 50svh;
 }
 
 .sidebar-credit {
-  top: 97%;
+  top: 96%;
   position: absolute;
   background-color: black;
   opacity: 0.6;
@@ -51,8 +56,76 @@ img {
 }
 
 .form-container {
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
   flex: 2 1 0%;
+  padding: 1%;
+}
+
+.headline-text {
+  font-size: 0.725rem;
+  max-width: 80%;
+  line-height: 2em;
+  padding-top: 13%;
+}
+
+h3 {
+  padding-top: 1%;
+}
+
+.form-input-container {
+  margin-top: 7%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2%;
+}
+
+p {
+  padding-bottom: 2%;
+  font-size: 2rem;
+}
+
+.small-input-container {
+  line-height: 2em;
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 3%;
+}
+
+.input-left,
+.input-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 45%;
+}
+
+.creation-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  max-width: 16%;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: black;
+}
+
+.create-account-button {
+  background-color: rgb(220, 233, 222);
+  padding: 10%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.text-bottom {
+  padding-top: 8%;
 }
 
 @media screen and (max-width: 550px) {

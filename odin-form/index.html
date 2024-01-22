@@ -14,17 +14,81 @@
         <img class="logo" src="logo.jpg" />
         <div class="sidebar-credit">똥을 먹어</div>
       </div>
-
       <div class="form-container">
-        <div class="headline-text"></div>
-        <div class="form-input-container">
-          <!-- use javascript to make 6 flexbox containers -->
+        <div class="headline-text">
+          <h1>
+            Empowering homes with <em>eco-friendly</em> sophistication,
+            redefined interior spaces through <em>sustainable</em> furniture,
+            natural lighting, and family-inspired design for a harmonious and
+            environmentally conscious living experience.
+          </h1>
+
+          <h3>
+            <u>
+              "Sustainable Elegance: Family-Centric Interior Architecture and
+              Remodeling."
+            </u>
+          </h3>
         </div>
+        <div class="form-input-container">
+          <p><strong>시작하다</strong></p>
+          <!-- decided to make a create a nested flexbox inside the form-input-container so i can make some easy styling -->
+          <form action="index2.html" method="post">
+              <div class="small-input-container">
+              <div class="input-left">
+                <label class="firstName">*First name:</label>
+                <input name="firstName" type="text" id="firstName" required />
+                <label class="email">*Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  autocomplete="off"
+                  placeholder="...@email.com"
+                />
+                <label class="password">*Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  required
+                  minlength="8"
+                  maxlength="20"
+                />
+              </div>
+              <div class="input-right">
+                <label class="lastName">*Last name:</label>
+                <input name="lastName" type="text" id="lastName" required />
+                <label class="phoneNumber">*Phone number:</label>
+                <input
+                  type="text"
+                  id="phoneNumber"
+                  required
+                  placeholder="xxx-xxx-xxxx"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                />
+                <label class="confirmPassword">*Confirm password:</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  required
+                  minlength="8"
+                  maxlength="20"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+          <div class="creation-container">
+            
+            <div class="create-account-button">
+              <a href="#">Create Account</a> 
+            </div>
+            <div class="text-bottom">Got an account? <a href="#">Log In</a> </div>
       </div>
-      <div class="creation-container">
-        <div class="create-account-button"></div>
-        <div class="text-bottom"></div>
+
+
       </div>
-    </div>
   </body>
 </html>
+
+<!-- interior archetecture, remodeling, company based on sustainable furniture, natural lighting, family based interior styling -->
