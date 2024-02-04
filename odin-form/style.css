@@ -62,8 +62,9 @@ img {
 }
 
 .headline-text {
+  text-align: justify;
   font-size: 0.725rem;
-  max-width: 80%;
+  max-width: 90%;
   line-height: 2em;
   padding-top: 13%;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
